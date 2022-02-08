@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PainelVagasComponent } from './painel-vagas.component';
+import {CadastrarVagasComponent } from './cadastrar-vagas.component';
 
-describe('PainelVagasComponent', () => {
-  let component: PainelVagasComponent;
-  let fixture: ComponentFixture<PainelVagasComponent>;
+describe('CadastrarVagasComponent', () => {
+  let component: CadastrarVagasComponent;
+  let fixture: ComponentFixture<CadastrarVagasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PainelVagasComponent ]
+      declarations: [ CadastrarVagasComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PainelVagasComponent);
+    fixture = TestBed.createComponent(CadastrarVagasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,32 @@
+<h1>Cadastrar Vaga</h1>
+
+<div class="form">
+    <form class="row g-2">
+        <div class="row mb-2">
+            <label for="inputId" class="form-label">ID</label>
+            <input type="text" class="form-control" id="inputId" name="id" [(ngModel)]="vaga.id">
+        </div>
+
+        <div class="row mb-2">
+            <label for="inputNome" class="form-label">Nome da Vaga</label>
+            <input type="text" class="form-control" id="inputNome" name="nome" [(ngModel)]="vaga.nome">
+        </div>
+
+        <div class="row mb-2">
+            <label for="inputFoto" class="form-label">Foto da Vaga</label>
+            <input type="text" class="form-control" id="inputFoto" placeholder="Ex: foto1.jpg" name="foto"
+                [(ngModel)]="vaga.foto">
+        </div>
+        <div class="row mb-2">
+            <label for="inputDesc" class="form-label">Descrição</label>
+            <input type="text" class="form-control" id="inputDesc" name="descricao" [(ngModel)]="vaga.descricao">
+        </div>
+        <div class="row mb-2">
+            <label for="inputSal" class="form-label">Salário</label>
+            <input type="text" class="form-control" id="inputSal" name="salario" [(ngModel)]="vaga.salario">
+        </div>
+        <div class="col-12">
+            <button type="button" (click)="cadastrar()" class="btn btn-primary">Cadastrar Vaga</button>
+        </div>
+    </form>
+</div>
