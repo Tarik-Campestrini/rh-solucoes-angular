@@ -1,0 +1,73 @@
+<div class="container ">
+  <form class="needs-validation " novalidate [formGroup]="form">
+    <div class="form-group">
+      <div class="col-md-6 offset-md-3">
+        <label for="nome">Nome da Vaga</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nome"
+          placeholder="Nome da Vaga"
+          formControlName="nome"
+          [ngClass]="{ 'is-invalid': submitted && hasError('nome') }"
+        />
+        <div class="invalid-feedback" *ngIf="hasError('nome')">
+          Informe um nome para a vaga.
+        </div>
+      </div>
+      <div class="col-md-6 offset-md-3">
+        <label for="foto">Foto da Vaga</label>
+        <input
+          type="text"
+          class="form-control"
+          id="foto"
+          placeholder="Ex: Foto1.jpg"
+          formControlName="foto"
+          [ngClass]="{ 'is-invalid': submitted && hasError('foto') }"
+        />
+        <div class="invalid-feedback" *ngIf="hasError('foto')">
+          Informe um caminho para a foto.
+        </div>
+      </div>
+      <div class="col-md-6 offset-md-3">
+        <label for="descricao">Descrição da Vaga</label>
+        <input
+          type="text"
+          class="form-control"
+          id="descricao"
+          placeholder="Resumo sobre a Vaga"
+          formControlName="descricao"
+          [ngClass]="{ 'is-invalid': submitted && hasError('descricao') }"
+        />
+        <div class="invalid-feedback" *ngIf="hasError('descricao')">
+          Informe uma descrição para a vaga.
+        </div>
+      </div>
+      <div class="col-md-6 offset-md-3">
+        <label for="salario">Salário</label>
+        <input
+          type="text"
+          class="form-control"
+          id="salario"
+          placeholder="0"
+          formControlName="salario"
+          [ngClass]="{ 'is-invalid': submitted && hasError('salario') }"
+        />
+        <div class="invalid-feedback" *ngIf="hasError('salario')">
+          Informe um salário para a vaga.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 offset-md-5 botao">
+      <button type="submit" class="btn btn-primary" (click)="onSubmit()">
+        Salvar
+      </button>
+      <button type="submit" class="btn btn-danger" (click)="onCancel()">
+        Cancelar
+      </button>
+    </div>
+  </form>
+</div>
+
+
+

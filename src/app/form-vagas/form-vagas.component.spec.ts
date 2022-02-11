@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MuralVagasComponent } from './mural-vagas.component';
+import { FormVagasComponent } from './form-vagas.component';
 
-describe('MuralVagasComponent', () => {
-  let component: MuralVagasComponent;
-  let fixture: ComponentFixture<MuralVagasComponent>;
+describe('FormVagasComponent', () => {
+  let component: FormVagasComponent;
+  let fixture: ComponentFixture<FormVagasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MuralVagasComponent],
+      declarations: [FormVagasComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MuralVagasComponent);
+    fixture = TestBed.createComponent(FormVagasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

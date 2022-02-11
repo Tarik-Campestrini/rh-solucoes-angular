@@ -22,32 +22,11 @@
       "salario": 10000
     },
     {
-      "id": "4",
-      "nome": "teste",
+      "id": 4,
+      "nome": "vaga 4",
       "foto": "foto4.jpg",
-      "descricao": "teste",
-      "salario": "30000"
-    },
-    {
-      "id": "5",
-      "nome": "teste2",
-      "foto": "foto1.jpg",
-      "descricao": "dddd",
-      "salario": "30000"
-    },
-    {
-      "id": "6",
-      "nome": "teste",
-      "foto": "foto1.jpg",
-      "descricao": "dddd",
-      "salario": "60000"
-    },
-    {
-      "id": "7",
-      "nome": "teste3",
-      "foto": "foto4.jpg",
-      "descricao": "dddfffff",
-      "salario": "10000"
+      "descricao": "vaga boa demias",
+      "salario": "2000"
     }
   ]
 }

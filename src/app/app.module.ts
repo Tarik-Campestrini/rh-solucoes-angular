@@ -1,32 +1,39 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { AppComponent } from './app.component';
 import { MuralVagasComponent } from './mural-vagas/mural-vagas.component';
 import { RouterModule } from '@angular/router';
-import { CadastrarVagasComponent } from './cadastrar-vagas/cadastrar-vagas.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { PainelVagasComponent } from './painel-vagas/painel-vagas.component';
+import { FormVagasComponent } from './form-vagas/form-vagas.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MuralVagasComponent,
-   CadastrarVagasComponent,
     MenuComponent,
-    RodapeComponent
+    RodapeComponent,
+    PainelVagasComponent,
+    FormVagasComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    FormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    ModalModule.forRoot(),
+    SharedModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
