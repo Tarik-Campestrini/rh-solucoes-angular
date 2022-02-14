@@ -49,7 +49,7 @@ export class FormVagasComponent implements OnInit {
         [
           Validators.required,
           Validators.minLength(3),
-          Validators.maxLength(45),
+          Validators.maxLength(100),
         ],
       ],
       salario: [

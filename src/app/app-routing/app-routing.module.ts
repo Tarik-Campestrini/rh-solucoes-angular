@@ -1,10 +1,10 @@
-import { VagaResolverGuard } from './../guards/vaga-resolver.guard';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+
+import { FormVagasComponent } from '../form-vagas/form-vagas.component';
 import { MuralVagasComponent } from '../mural-vagas/mural-vagas.component';
 import { PainelVagasComponent } from '../painel-vagas/painel-vagas.component';
-import { FormVagasComponent } from '../form-vagas/form-vagas.component';
+import { VagaResolverGuard } from './../guards/vaga-resolver.guard';
 
 const rotas: Routes = [
   { path: 'mural', component: MuralVagasComponent },
